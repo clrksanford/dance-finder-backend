@@ -1,0 +1,150 @@
+/*----------------------------------*/
+/*------------RESET CSS-------------*/
+/*----------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------*/
+/*-------BEGIN CUSTOM STYLES--------*/
+/*----------------------------------*/
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	height: 100%;
+	background: url('../images/contra.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body:after {
+	content : "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+  padding: 20px;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+h3 {
+	font-family: 'Lalezar', sans-serif;
+	font-size: 30px;
+	color: white;
+	z-index: 2;
+}
+
+nav {
+  padding: 200px 0 100px 0;
+  text-align: center;
+	position: relative;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  font-style: italic;
+	color: #ffd633;
+}
+
+form {
+	margin: 50px auto;
+}
+
+select#search {
+	opacity: 0.5;
+}
+
+button {
+	background-color: rgb(0,0,0);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 9px 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(255, 214, 51);
+}
+
+h2 {
+  visibility: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+	position: absolute;
+	padding: 20px;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0,0,0);
+	text-align: center;
+}
+
+footer p {
+	font-family: Helvetica, sans-serif;
+	color: white;
+}
