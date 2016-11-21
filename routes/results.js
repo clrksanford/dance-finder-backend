@@ -13,7 +13,12 @@ router.get('/:state', function(req, res, next) {
       console.log('no song found');
       res.status(404).send();
     } else {
-      res.json(dances);
+      var today = new Date();
+      futureDances = dances.filter(function (dance) {
+        return dance.date > today;
+      });
+
+      res.json(futureDances);
     }
   });
 });
